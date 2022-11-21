@@ -48,6 +48,33 @@ img {
   max-width: 200px;
 }
 
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.125em;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* o sinal de mais abaixo (+) representa adjacência.
+  apenas os elementos <li> que vierem após outro elemento li serão estilizados, ou
+  seja: o primeiro li não é estilizado
+*/
+.header li + li {
+  margin-left: 30px;
+}
+
 .sidenav {
   grid-area: sidenav;
 }
